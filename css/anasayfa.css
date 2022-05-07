@@ -1,0 +1,100 @@
+#about {
+    background-image: linear-gradient(rgba(8, 88, 174, 0.6), rgba(0, 0, 0, .9)), url(../img/about.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0px 0 200px 0;
+    color: white;
+    height: 720px;
+}
+
+#hobies p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.me {
+    background-image: linear-gradient(rgba(8, 88, 174, 0.3), rgba(8, 88, 174, 0.5)), url(../img/me.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 55px;
+}
+
+.mybuton {
+    font-size: 15px;
+    border-radius: 55px;
+    color: rgba(255, 255, 255, .6);
+    border: 3px solid black;
+}
+
+.mybuton:hover {
+    background-color: rgba(8, 88, 174, 0.4);
+    transition: .5s;
+}
+
+
+/* DENEME */
+
+.about-dis {
+    border-radius: 25px;
+    margin-bottom: 250px;
+}
+
+.about-ic {
+    color: white;
+    border-radius: 25px;
+}
+
+.about-ic p {
+    font-size: 16px;
+    padding: 25px 135px 100px 55px;
+    font-weight: 400;
+}
+
+.about-ic h1 {
+    padding: 125px 0 0 55px;
+}
+
+.about-resim {
+    position: absolute;
+    max-width: 675px;
+    padding-top: 40px;
+}
+
+.about-resim img {
+    border-radius: 25px;
+}
+
+.about-dis {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .about-resim {
+        position: relative;
+        margin-bottom: 50px;
+        max-width: none;
+        width: 100%;
+        max-height: none;
+    }
+    .about-ic {
+        display: flex;
+        justify-content: center !important;
+        flex-direction: column;
+    }
+    .about-ic p {
+        padding: 25px 70px 0 70px;
+    }
+    .about-ic h1 {
+        padding: 50px 0 0 70px;
+    }
+    .about-dis {
+        display: flex;
+        flex-direction: column;
+        background-color: #003E80;
+        width: 100%;
+    }
+}
