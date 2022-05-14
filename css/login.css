@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(rgba(8, 88, 174, 0.9), rgba(8, 88, 174, 0.4)), url(../img/login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+}
+#form-ust {
+    border-radius: 35px 35px 0 0;
+}
+
+.form-genel {
+    background-color: #bfcfff;
+    border-radius: 35px 35px 35px 35px ;
+}
+#form-alt {
+    border-radius: 0 0 35px 35px;
+}
+@media screen and (max-width: 768px) {
+    .labeller {
+        text-align: center!important;
+    }
+    input{
+        min-width: 65%;
+    }
+    .form-genel{
+        min-width: 75%;
+    }
+}
+@media screen and (max-width: 992px){
+    .form-genel{
+        min-width: 80%;
+    }
+}
