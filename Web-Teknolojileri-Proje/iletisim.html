@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/renkler.css">
+    <link rel="stylesheet" href="./css/iletisim.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-primary ">
+
+        <div class="container-fluid border-radius koyu-mavi">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="anasayfa.html"><i class="fa-brands fa-redhat" style="margin-right: 7px;"></i>Ramazan Sefa Kurtuluş</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto p-2">
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link active" href="anasayfa.html">Anasayfa</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link active" aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link active" href="sehrim.html">Şehrim</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link active" href="mirasim.html">Mirasım</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link active" href="iletisim.html">İletişim</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a href="login.html" class="nav-link active"><i class="fa-solid fa-right-to-bracket"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="d-flex justify-content-center mt-5">
+
+        <div class="w-75 mt-5 form-genel">
+            <form name="myForm" action="git.html" onsubmit="return validateForm()" id="form">
+                <div id="form-ust" class="p-3 bg-primary text-white text-center">
+                    <h2 class="fw-normal">İletişim Formu</h2>
+                </div>
+                <div class="row mt-3 fs-5 ">
+                    <div class="col-md-6 col-xs-12 text-end labeller">
+                        <label for="name">İsminizi Giriniz :</label>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <input type="text" name="name" id="name">
+
+                        <!-- <span id="nameError" style="width:100px; height: 100px; "></span> -->
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-3 fs-5 ">
+                    <div class="col-md-6 col-xs-12 text-end labeller">
+                        <label for="mail">Mail Adresinizi Giriniz :</label>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <input type="text" name="email" id="email">
+                        <!-- <span id="mailError" style="width:100px; height: 100px; "></span> -->
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-3 fs-5">
+                    <div class="col-md-6 text-end labeller">
+                        <label for="mesage"> Mesajınızı Buraya Yazınız :</label>
+                    </div>
+                </div>
+                <div class="row mt-3 fs-5">
+                    <div class="col-md-12 text-center">
+                        <textarea name="message" id="text-area" cols="74" rows="8" class="fs-6 fst-italic text-center" placeholder="Mesajınızı buraya yazabilirsiniz..."></textarea>
+                    </div>
+                </div>
+                <div class="row mt-3 fs-5 ">
+                    <div class="col-md-6 text-center p-2">
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                    <div class="col-md-6 text-center p-2">
+                        <button class="btn btn-primary" type="reset">Temizle</button>
+                    </div>
+                </div>
+            </form>
+            <div id="form-alt" class="p-3 bg-primary text-white text-center mt-5">
+                <h2 class="fw-normal">İletişim Formu</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- YUKARİ ÇIK BUTONU -->
+    <a class="yukari-cik">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <!-- YUKARİ ÇIK BUTONU -->
+
+
+    <footer class=" bg-primary text-light">
+        <div class="koyu-mavi d-flex flex-row justify-content-center p-4 border-radius " ">
+             <p>Web Teknolojileri Projesi <i class="fa-regular fa-copyright " style="margin-right: 5px; "></i> </p>
+             <p> Ramazan Sefa Kurtuluş || 2022</p>
+         </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["name"].value;
+        if (x == "") {
+        alert("İsim alanının doldurulması zorunludur");
+        return false;
+  }
+  var y = document.forms["myForm"]["email"].value;
+			if (y == "") 
+			{
+				alert("Mail Kısmı Boş bırakılamaz ");
+				return false;
+			}
+
+			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+			if (forMail.test(y) == false) 
+			{
+				alert("Geçersiz Mail Adresi!!!");
+				return false;
+			}
+}
+
+
+    //    const form = document.getElementById('form')
+    //    const name = document.getElementById('name')
+    //    const email = document.getElementById('email')
+    //    const error = document.getElementById('error')
+    //    form.addEventListener('submit',(e) =>{
+    //        let message=[];
+           
+    //        if(name.value===''|| name.value== null){
+    //            message.push('Bu alanın doldurulması zorunludur')
+    //        }
+    //        if(message.length>0){
+    //            e.preventDefault();
+    //            nameError.innerText = message.join(',')
+    //            message.
+    //        }
+    //        if(email.value===''|| email.value== null){
+    //            message.push('Bu alanın doldurulması zorunludur')
+    //        }
+    //        if(message.length>0){
+    //            e.preventDefault();
+    //            mailError.innerText = message.join(',')
+    //        }
+    //    })
+        
+
+    </script>	
+
+    
+                <script src="./js/bootstrap.js "></script>
+                <script src="./js/app.js "></script>
+                <script src="https://kit.fontawesome.com/2a95c1779f.js " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

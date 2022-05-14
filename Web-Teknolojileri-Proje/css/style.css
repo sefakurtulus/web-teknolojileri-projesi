@@ -1,0 +1,73 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+    font-size: 17px;
+}
+
+footer {
+    margin-top: 120px;
+    border-radius: 200px 200px 0 0;
+}
+
+.border-radius {
+    border-radius: 0 0 40% 40%;
+}
+
+footer .border-radius {
+    border-radius: 100% 100% 0 0;
+}
+
+footer {
+    border-radius: 70px 70px 0 0;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.yukari-cik {
+    background-color: rgba(13, 110, 253);
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+    display: none;
+    opacity: .5;
+}
+
+.yukari-cik:hover {
+    background-color: #022b57;
+    color: white;
+    transition: .4s;
+}
+
+.goster {
+    transition: .4s;
+    display: block;
+}
+
+
+/* @media only screen and (max-width: 992px) {
+    .nav-item a i {
+        display: none;
+        pointer-events: none;
+        cursor: default;
+    }
+    .nav-item a {
+        pointer-events: none;
+        cursor: default;
+    }
+} */
